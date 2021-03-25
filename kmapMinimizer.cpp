@@ -1,3 +1,9 @@
+
+/*
+This project is created by Basant Elhussein and Mariam Fawzy as part of the Digital Design I Course.
+March 26, 2021.
+Copyrgiht © 2021 Basant and Mariam. All rights are reserved.
+*/
 #include<bits/stdc++.h>
 #define isOn(x,y) (((x)>>(y))&1)
 using namespace std;
