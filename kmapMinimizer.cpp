@@ -1,9 +1,9 @@
-
 /*
 This project is created by Basant Elhussein and Mariam Fawzy as part of the Digital Design I Course.
 March 26, 2021.
 Copyrgiht © 2021 Basant and Mariam. All rights are reserved.
 */
+
 #include<bits/stdc++.h>
 #define isOn(x,y) (((x)>>(y))&1)
 using namespace std;
@@ -73,8 +73,8 @@ vector<int> essential, nonessential, chosenNonessential, simpleFunction;
 vector<vector<bool>> tablePI;
 
 void getPrimeImplicants() {
-	int n = minterms.size();
-	int vis[(int)pow(2, num)] = {};
+	int n = minterms.size(); // n = 4
+	int vis[(int)pow(2, num)] = {}; // vis[16]
 
 	for (int common = n; common > 0; common--) {
 		if (common != pow(2, (int)log2(common))) continue;
