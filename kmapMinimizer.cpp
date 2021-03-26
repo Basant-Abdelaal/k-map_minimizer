@@ -73,8 +73,8 @@ vector<int> essential, nonessential, chosenNonessential, simpleFunction;
 vector<vector<bool>> tablePI;
 
 void getPrimeImplicants() {
-	int n = minterms.size(); // n = 4
-	int vis[(int)pow(2, num)] = {}; // vis[16]
+	int n = minterms.size(); 
+	int vis[(int)pow(2, num)] = {}; 
 
 	for (int common = n; common > 0; common--) {
 		if (common != pow(2, (int)log2(common))) continue;
